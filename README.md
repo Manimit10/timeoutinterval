@@ -1,56 +1,46 @@
-Project Title
-One Paragraph of project description goes here
+Title: Getting Familiar with setInterval() and setTimeout() 
+===============================
+this project will review two example for using setInterval() and setTimeout() functions in JavaScript. 
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+# Getting Started
 
-Prerequisites
-What things you need to install the software and how to install them
+there are two folders in the repository. each folder contains one .html file and .js file. The html file connected to corresponding javaScript file. in order to run *setInterval()* file you need to go to the folder related to serInterval and open the *setInterval.html* file. You need to take similar steps in order to run *setTimeout()* .
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+# Prerequisties 
+there is no prerequirments for this project.
 
-Say what the step will be
 
-Give the example
-And repeat
+# How does it work:
+In this section we are going to explain how these two functions behave in browser.
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+## 1- setInterval()
 
-Running the tests
-Explain how to run the automated tests for this system
+it is a function that can set to repeat certain task in time portion between each execuatin. for example the program can show simple alert to the user each 5 minutes. 
+the default syntax based on MDN website is:
+`setInterval(() => alert(), 50000);`
 
-Break down into end to end tests
-Explain what these tests test and why
+as you can see in the code set interval will accept two parameters , first parameter is an anynomous function (we use arrow function) , and next parameter is ineteger of time in milisecond format.
+in above example each 50 thousand milisecond we will show an alert. 50 thousand milisecond is equal to 50 minutes. 
+it is important to know that this function will be executed in unlimitedly until you stop it. in this example we are not going to stop it.
 
-Give an example
-And coding style tests
-Explain what these tests test and why
+## 2- setTimeout()
 
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+as its name represents, you can show an action after certain amout of time. look at the cdoe example: 
+`setTimeout(() => alert(), 2000);`
 
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+setTimeout will accept two parameters, first is ananymous function, and second is the time in milisecond measurment. in the given example, we will show an alert to the browser in 2 thousand milisecond which is equal to 2 second. 
 
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+#TESTING
+the testing measurment has done in two defferent folders and all file in Mzila Firefox, Google Chrome, Safari, and Opera. 
+the result show all fo them show same result.
 
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+
+
+ -- Authors -- 
+Mani Tahriri
+-- email -- 
+m.tahriri.z@gmail.com
+
+
